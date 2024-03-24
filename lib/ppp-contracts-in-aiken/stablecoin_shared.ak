@@ -1,7 +1,5 @@
-use aiken/dict
-use aiken/list
 use aiken/transaction.{ScriptContext}
-use aiken/transaction/value.{PolicyId, from_minted_value, tokens}
+use aiken/transaction/value.{PolicyId, from_minted_value, quantity_of}
 use ppp_contracts_in_aiken/util.{PKH}
 
 const stablecoinTokenName = "stablecoin"
@@ -13,10 +11,7 @@ pub fn get_total_minted_stablecoin(
 ) -> Int {
   ctx.transaction.mint
     |> from_minted_value()
-    |> tokens(policy_id)
-    |> dict.filter(fn(asset_name, _v) { asset_name == stablecoinTokenName })
-    |> dict.values()
-    |> list.foldl(0, fn(n, total) { n + total })
+    |> quantity_of(policy_id, stablecoinTokenName)
 }
 
 pub type CollateralDatum {
