@@ -10,5 +10,672 @@
     },
     "license": "Apache-2.0"
   },
-  "validators": []
+  "validators": [
+    {
+      "title": "week02/week02.burn",
+      "datum": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "510100003222253330044a029309b2b2b9a1",
+      "hash": "66a67769edd0c54d5f6ec8ba3925394bf0e4fc1f8bfbe3a131eb523c"
+    },
+    {
+      "title": "week02/week02.forty_two_typed",
+      "datum": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "r",
+        "schema": {
+          "$ref": "#/definitions/Int"
+        }
+      },
+      "compiledCode": "581a010000322223253330053370e002902a0a4c26cac6eb40095cd1",
+      "hash": "e57fe23b2dd7d30652d6a486bd2399bd669eb787f0c74c4449155298"
+    },
+    {
+      "title": "week02/week02.gift",
+      "datum": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "_redeemer",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "510100003222253330044a229309b2b2b9a1",
+      "hash": "39c520d0627aafa728f7e4dd10142b77c257813c36f57e2cb88f72a5"
+    },
+    {
+      "title": "week03/parameterized_vesting.vesting",
+      "datum": {
+        "title": "_d",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "parameters": [
+        {
+          "title": "params",
+          "schema": {
+            "$ref": "#/definitions/week03~1parameterized_vesting~1VestingParameters"
+          }
+        }
+      ],
+      "compiledCode": "58ed010000323232323232323222225333007323232533300a3370e90010008992999805999119198008008019129998090008a501323253330113371e00400a29444cc010010004c054008dd718098009bac300f30103010301030103010301030103010300930013009005375c60026012010266446464a66601e66e1d20020011337120066eb4c04cc03400852818068009801980598019805801180798081808180818081808180818081804980098048029bad3004300900814a04601e0022940c020004c004c0180088c030c03400452613656230053754002460066ea80055cd2ab9d5573caae7d5d0aba21",
+      "hash": "e47ff197e14d209b8d0789c44832273ecc618a4d2ed11a2837fa966f"
+    },
+    {
+      "title": "week03/vesting.vesting",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/week03~1vesting~1VestingDatum"
+        }
+      },
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/Void"
+        }
+      },
+      "compiledCode": "59011d0100003232323232323232222325333007323232533300a3370e90010008992999805999119198008008019129998090008a501323253330113371e00400a29444cc010010004c054008dd718098009bac300f30103010301030103010301030103010300930013009006375c60026012010266446464a66601e66e1d20020011337120066eb4c04cc03400852818068009801980598019805801180798081808180818081808180818081804980098048031bad3004300900814a04601e0022940c020004c004c01800c8c030c034004526136563253330073370e9000000899191919299980718080010a4c2c6eb4c038004c038008dd7180600098028020b1802801918029baa001230033754002ae6955ceaab9e5573eae855d101",
+      "hash": "c46a1804a735d19c539e393e9f3e9b50320a3593b0244a282e7f5ce5"
+    },
+    {
+      "title": "week05/week05.free_tokens",
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "51010000322253330034a229309b2b2b9a01",
+      "hash": "d8906ca5c7ba124a0407a32dab37b2c82b13b3dcd9111e42940dcea4"
+    },
+    {
+      "title": "week05/week05.nft_policy",
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "parameters": [
+        {
+          "title": "utxo_ref",
+          "schema": {
+            "$ref": "#/definitions/aiken~1transaction~1OutputReference"
+          }
+        },
+        {
+          "title": "token_name",
+          "schema": {
+            "$ref": "#/definitions/ByteArray"
+          }
+        }
+      ],
+      "compiledCode": "59018d01000032323232323232323222322253330083253330093370e90001804000899191919191919191919191919299980c980e0010991919299980ca99980c800899b8748008008528099b8f00301414a0646600200201644a66603a00229404c8c94ccc070cdd79810980d00100c8a511330040040013021002301f001375a60320046eb8c05c00458c068004c8c8c94ccc05ccdc3a4004002297adef6c60137566038602a004602a002646600200200444a666034002298103d87a8000132323232533301b3371e022004266e9520003301f374c00297ae0133006006003375660380066eb8c068008c078008c070004c8cc004004008894ccc06400452f5bded8c0264646464a66603466e3d22100002100313301e337606ea4008dd3000998030030019bab301b003375c6032004603a00460360026eacc060004c060004c05c004c058004c054008dd618098009805800980880098048021bae300f001300700116300d300e300600114984d958dd7000918029baa001230033754002ae6955ceaab9e5573eae815d0aba21",
+      "hash": "17d982c0932dfd8c91205804aca8e7690f063c1422c097c9c766ad76"
+    },
+    {
+      "title": "week05/week05.signed_tokens",
+      "redeemer": {
+        "title": "vkh",
+        "schema": {
+          "$ref": "#/definitions/ByteArray"
+        }
+      },
+      "compiledCode": "588c0100003232323232323222325333005323253330073370e900000089919198008008011129998068008a5013232533300c3371e00401029444cc010010004c040008dd718070009bac300b300c300c300c300c300c300c300c300c3006300b300600414a0600e6ea8004c024c028c01000852613656375c004460086ea80055cd2ab9d5573caae7d5d0aba21",
+      "hash": "85da5dc802f2badb30cee512ed4c23de9cd84d8cc321feb365c37dea"
+    },
+    {
+      "title": "week06/exploitable_swap.exploitable_swap",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/week06~1exploitable_swap~1DatumSwap"
+        }
+      },
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "compiledCode": "5903d8010000323232323232323232222325333007323232533300a3370e900100089919191919191919b89375a6014601e01c646464a66602866e1d20020011480004dd6980c9809001180900099299980999b87480080045300103d87a8000132323300100100222533301900114c103d87a8000132323232533301a3371e9110000213374a90001980f1ba80014bd700998030030019bad301b003375c6032004603a00460360026eacc060c044008c044004c8cc004004008894ccc0580045300103d87a800013232323253330173371e9110000213374a90001980d9ba60014bd700998030030019bab3018003375c602c004603400460300026466600200200497adef6c60222533301600210011333003003301900232332232333001001002005222533301c0021001132333004004302000333223233001001005225333021001133022337606ea4010dd3001a5eb7bdb1804c8c8c8c94ccc088cdd799807004001260103d8798000133026337606ea4020dd30038028a99981119b8f0080021323253330243370e900000089981419bb037520146052604400400a200a604400264a666046a66604c00229445280a60103d87a800013374a9000198139ba60014bd70191998008008040011112999814001080089919980200218160019991191980080080291299981680089981719bb037520086ea000d2f5bded8c0264646464a66605c66ebccc068020009300103d8798000133032337606ea4020dd40038028a99981719b8f0080021323253330303370e900000089981a19bb03752014606a605c00400a200a605c00264a66605e66e1c005200014c103d87a800013374a9000198199ba80014bd7019b80007001133032337606ea4008dd4000998030030019bad302f003375c605a0046062004605e0026eb8c09c004dd69814000981500109981319bb037520046e98004cc01801800cdd598118019bae302100230250023023001375c60360026eacc070004c078008894ccc058cdc80010008a6103d8798000153330163371e0040022980103d87a800014c103d87b80003756601a60240026030004646600200200444a666028002297ae01323253330133375e6012602200466e952000330173374a90001980b9804980880825eb80cc05d30103d87a80004bd7009980b80119802002000899802002000980c001180b0009bac3013001301300130120013009300130090062301000114a060100026002600c0064601a601c00229309b2b19299980399b87480000044c8c8c8c94ccc038c04400852616375a601e002601e0046eb8c034004c01401058c01400c8c014dd5000918019baa0015734aae7555cf2ab9f5740ae855d101",
+      "hash": "95037cdd6b21e37978634f81c10a7fba60e524d803eec4cb2835613f"
+    },
+    {
+      "title": "week06/negative_r_timed.negative_r_timed",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/week06~1negative_r_timed~1CustomDatum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/Int"
+        }
+      },
+      "compiledCode": "58e10100003232323232323232222323253330083232533300a3370e9001000899191919191919191919191919299980b99b890104800040045281919299980c19b87480080044cdc49bad300e3016015375a6038602c0042940c058004c030c050004c064004c048004c05c004c05c004c058004c054004c050004c04c004c048004c044004c024c004c0240188c03c00452818040009806180698030018a4c26cac6eb400cc94ccc01ccdc3a400000226464a666018601c0042930b1bad300c0013005004163005003230053754002460066ea80055cd2ab9d5573caae7d5d0aba21",
+      "hash": "2b0ae15164c8c89354ce5e6196e270a9690d0b66fba614240a0347d5"
+    },
+    {
+      "title": "week08/week08.stake_validator",
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "parameters": [
+        {
+          "title": "addr",
+          "schema": {
+            "$ref": "#/definitions/aiken~1transaction~1credential~1Address"
+          }
+        }
+      ],
+      "compiledCode": "590407010000323232323232323232222533300632323253330093370e90030008a51153330093370e900200089919191919299980719b8748000c0340044c8c8c8cdc480119b8248010c8c8c8c94ccc054cdc3a40040022900009bad301a301300230130013253330143370e90010008a6103d87a8000132323300100100222533301a00114c103d87a8000132323232533301b3371e9110000213374a90001980f9ba80014bd700998030030019bad301c003375c6034004603c00460380026eacc064c048008c048004c8cc004004008894ccc05c0045300103d87a800013232323253330183371e9110000213374a90001980e1ba60014bd700998030030019bab3019003375c602e004603600460320026466600200200497adef6c60222533301700210011333003003301a00232332232333001001002005222533301d0021001132333004004302100333223233001001005225333022001133023337606ea4010dd3001a5eb7bdb1804c8c8c8c94ccc08ccdd799807004001260103d8798000133027337606ea4020dd30038028a99981199b8f0080021323253330253370e900000089981499bb037520146054604600400a200a604600264a666048a66604e00229445280a60103d87a800013374a9000198141ba60014bd70191998008008040011112999814801080089919980200218168019991191980080080291299981700089981799bb037520086ea000d2f5bded8c0264646464a66605e66ebccc068020009300103d8798000133033337606ea4020dd40038028a99981799b8f0080021323253330313370e900000089981a99bb03752014606c605e00400a200a605e00264a66606066e1c005200014c103d87a800013374a90001981a1ba80014bd7019b80007001133033337606ea4008dd4000998030030019bad3030003375c605c004606400460600026eb8c0a0004dd69814800981580109981399bb037520046e98004cc01801800cdd598120019bae302200230260023024001375c60380026eacc074004c07c008894ccc05ccdc80010008a6103d8798000153330173371e0040022980103d87a800014c103d87b80003756601e6026002603200464646600200200444a66602c002297ae01323253330153375e6014602600402426603200466008008002266008008002603400460300026eb0c054c058c058c038010dd6980a00098060008b1919198008008011129998098008a60103d87a800013232323253330143375e014004266e95200033018375000297ae0133006006003375a602a0066026004602e004602a0026eacc048c04cc04cc04cc04cc04cc04cc02c004c004c02801c8c044004c03c004c01c0085281803800980098028011180618068008a4c26cac4600a6ea80048c00cdd5000ab9a5573aaae7955cfaba05742ae881",
+      "hash": "e7cf50304682a075ab75a166e2a71db60018c1a0c68993f936ef537a"
+    },
+    {
+      "title": "week09/collateral.collateral",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/ppp_contracts_in_aiken~1stablecoin_shared~1CollateralDatum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/week09~1collateral~1CollateralRedeemer"
+        }
+      },
+      "compiledCode": "5902a101000032323232323232323222232325333008323232533300b3370e900100089919191919299980819b8748008004400854ccc0400084010528180700599b873370290001bad301330143014300c00b001332322323232323232333001001002480008894ccc06c00840044ccc00c00cc078008cdc01bad301d0020013006001323300100100222533301800114bd6f7b630099191919299980c99b8f0024890a737461626c65636f696e0013301d337606ea4008dd4000998030030018998030030019bad301a003375c6030004603800460340026464a66602866e1d200200114bd6f7b63009bab301930120023012001323300100100222533301700114c0103d87a800013232323253330183371e012004266e9520003301c374c00297ae0133006006003375660320066eb8c05c008c06c008c064004c8cc004004008894ccc05800452f5bded8c0264646464a66602e66e3d22100002100313301b337606ea4008dd3000998030030019bab3018003375c602c004603400460300026eacc054c058c058c058c058c038c014c03802cc004004894ccc04800452f5c02660266022602800266004004602a0026eb8c008c02c028cc88c8cc00400400c894ccc04c00452809919299980919b8f00200514a2266008008002602e0046eb8c054004dd61808980918091809180918091809180918091805180098050039bae3004300a0092301100114a060120026002600e0084601c601e00229309b2b19299980419b874800000454ccc02cc01801052616153330083370e90010008a99980598030020a4c2c2c600c00664a66600e66e1d2000001132323232323253330103013002149858dd6980880098088011bae300f001300f002375c601a002600a0082c600a0064600a6ea80048c00cdd5000ab9a5573aaae7955cfaba05742ae89",
+      "hash": "6b095476e28ce2a3bb189a49db2b5d5362e8df6b0da4265ed9671b41"
+    },
+    {
+      "title": "week09/minting.mint_stablecoins",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/week09~1minting~1MintingRedeemer"
+        }
+      },
+      "parameters": [
+        {
+          "title": "params",
+          "schema": {
+            "$ref": "#/definitions/week09~1minting~1MintingParams"
+          }
+        }
+      ],
+      "compiledCode": "590595010000323232323232323232222325333007323253330093370e900018040008991919191919191919299980a980c001099191919191919191919299980f981100109919191919191919191919299981399b874800000454ccc09c02054ccc09c03840145280a50153330273370e90010008a9998138038a99981380208010a5014a02a66604e0062a66604e008200e29405281812811198069bac300e3023301a3023020375c603c604601266e20ccc00c01c058dd6980c181101099b8148000018cdc399b8148000dd6980b981080380299b8900433300100c014375a602c604003e44466e0ccdc119b830030010024820225e8cdc40012400066e2120000013232323232323232333001001002480008894ccc0ac00840044ccc00c00cc0b8008cdc01bad302d0020013005001323300100100222533302800114bd6f7b630099191919299981499b8f0024890a737461626c65636f696e0013302d337606ea4008dd4000998030030018998030030019bad302a003375c6050004605800460540026464a66604866e1d200200114bd6f7b63009bab3029302200230220013300e001018323300100100222533302600114bd6f7b630099191919299981399b8f488100002100313302b337606ea4008dd3000998030030019bab3028003375c604c004605400460500026eacc094c098c098c098c098c078c054c07806cc004004894ccc08c00452f5c02660486044604a00266004004604c00260106eacc058c06c008c02800458c080004cc02cc8c8cc004004008894ccc08000452f5c0266042602c603660440026600400460460026eb0c03cc060c03cc060054dd71809980c00ba99980c99b87375a601a602e00c0062a66603266e3cdd71807180b8030078998009bac30023017300e3017014375c6024602e00c294052811191980080080191299980f8008a5013232533301e3371e00400a29444cc010010004c08c008dd718108009180e980f180f180f180f180f180f180f180f00098009bab300f3014005232323253330193370e90010008a400026eb4c078c05c008c05c004c94ccc060cdc3a40040022980103d87a8000132323300100100222533301e00114c103d87a8000132323232533301f3371e9110000213374a9000198119ba80014bd700998030030019bad3020003375c603c004604400460400026eacc074c058008c058004cc00800522010022323300100100322533301b00114c0103d87a8000132323232533301c3371e00e004266e95200033020374c00297ae01330060060033756603a0066eb8c06c008c07c008c074004c0040088c8c8008c94ccc054cdc3a40000022646464646464a66603c60420042930b1bad301f001301f002375c603a002603a0046eb8c06c004c04c00858c04c004c8c94ccc054cdc3a40000022c2a66602a66e1d2002001161301a30130023013001300730110011630160013300137586008601c600a601c0166eb8c024c03803488cc0100088c8c94ccc050cdc3a4004002266e3c010dd7180c98090010a503012001300730103007301000133223232533301530180021375a6464a66602866e1d200000116153330143370e90010008b0980c9809001180900098031808180598080008b180b0009980180111919299980999b87480080044cdc79bae3018301100200414a06022002600c601e600c601e6014601e0026eb0c01cc030c00cc030024dd71801980600591191980080080191299980a0008a5eb804c8c94ccc04cc0140084cc05c008cc0100100044cc010010004c060008c0580048c048c04cc04c0048c044004dd7180780098038008b180098030019180698070008a4c26cac64a66600e66e1d20000011533300a300500314985854ccc01ccdc3a40040022a666014600a0062930b0a99980399b874801000454ccc028c01400c52616163005002230053754002460066ea80055cd2ab9d5573caae7d5d02ba15745",
+      "hash": "828f94c4798430dc73e3688ee37718228f44f0ff62fa0daf554d438b"
+    },
+    {
+      "title": "week09/nft.nft_policy",
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "parameters": [
+        {
+          "title": "utxo_ref",
+          "schema": {
+            "$ref": "#/definitions/aiken~1transaction~1OutputReference"
+          }
+        },
+        {
+          "title": "token_name",
+          "schema": {
+            "$ref": "#/definitions/ByteArray"
+          }
+        }
+      ],
+      "compiledCode": "59018d01000032323232323232323222322253330083253330093370e90001804000899191919191919191919191919299980c980e0010991919299980ca99980c800899b8748008008528099b8f00301414a0646600200201644a66603a00229404c8c94ccc070cdd79810980d00100c8a511330040040013021002301f001375a60320046eb8c05c00458c068004c8c8c94ccc05ccdc3a4004002297adef6c60137566038602a004602a002646600200200444a666034002298103d87a8000132323232533301b3371e022004266e9520003301f374c00297ae0133006006003375660380066eb8c068008c078008c070004c8cc004004008894ccc06400452f5bded8c0264646464a66603466e3d22100002100313301e337606ea4008dd3000998030030019bab301b003375c6032004603a00460360026eacc060004c060004c05c004c058004c054008dd618098009805800980880098048021bae300f001300700116300d300e300600114984d958dd7000918029baa001230033754002ae6955ceaab9e5573eae815d0aba21",
+      "hash": "17d982c0932dfd8c91205804aca8e7690f063c1422c097c9c766ad76"
+    },
+    {
+      "title": "week09/oracle.oracle",
+      "datum": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Int"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/week09~1oracle~1OracleRedeemer"
+        }
+      },
+      "parameters": [
+        {
+          "title": "params",
+          "schema": {
+            "$ref": "#/definitions/week09~1oracle~1OracleParams"
+          }
+        }
+      ],
+      "compiledCode": "5904840100003232323232323232322222325333008323232533300b3370e900100089919191919299980819b87480000044c94ccc044cdc3a400060200022646464a66602866e1d2002333001375660186024601860240046eb8c01cc048c01cc048044dd71806180918039809008899299980a99b8748008c0500044c8c8c8c8c94ccc074c08000854ccc068cdc3a400466600e6eacc048c060004dd71806980c1806980c00b9bae30123018300d3018017132533301b00d100114a06464a66603866e1d200000114a02a66603866e1d20020011323232533301f3370e9000180f0008991919251375a002604a002603a0022c66446464a66604466e1d2002001132533302600114c103d87a800013374a9000198139814000a5eb80c8cc004004014894ccc09c00452f5c0264646464a66605066e1d200200113300600600313302c302d3026002330060060033026001323253330283370e900200089919299981519b8f37286ecc0040344cdd2a40006605c00297ae014c0103d87a8000302e001302600214c103d87a80003026001300f3024002302b002302900110023020001323300100100222533302500114c103d87a800013232323253330263371e012004266e9520003302a0014bd7009980300300198138019bae302500230290023027001330220054bd701bab30233024302430243024302430243024302430243024301c3011301c018375c604400260340042646464944dd68009811000980d001180d0009801980c0008b0b180f00099191980080080111299980f0008a5eb804c8c94ccc074c8c94ccc07ccdc3a4004002266e3c024dd71812180e8010a50301d0013010301b3010301b002133021002330040040011330040040013022002302000137586002602c6016602c0244603a603c603c0026eb8c06c004c04c00458c01cc048c01cc048c030c04800858888c8c8c94ccc064cdc3a40040022900009bad301e301700230170013253330183370e90010008a6103d87a8000132323300100100222533301e00114c103d87a8000132323232533301f3371e014004266e95200033023375000297ae0133006006003375a60400066eb8c078008c088008c080004dd5980e980b001180b000991980080080211299980d8008a6103d87a8000132323232533301c3371e010004266e95200033020374c00297ae01330060060033756603a0066eb8c06c008c07c008c074004c05c004c03c00458c8c8cc004004008894ccc0580045300103d87a80001323253330153375e60106026004012266e952000330190024bd70099802002000980d001180c0009bac3003300e3003300e00a1002300e00a3322323300100100322533301500114a026464a66602866e3c008014528899802002000980c8011bae301700137586026602860286028602860286028602860286018600260180106eb8c018c03002c8c04c004c044004c0240085281804800980098038019180718078008a4c26cac64a66601066e1d20000011533300b300600314985854ccc020cdc3a40040022a666016600c0062930b0b1803001118029baa001230033754002ae6955ceaab9e5573eae815d0aba21",
+      "hash": "e502f61618f225739710c77da9c1ab97d0b3f6b4ad3af9642459ff4a"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "Option$aiken/transaction/credential/Referenced$aiken/transaction/credential/Credential": {
+      "title": "Optional",
+      "anyOf": [
+        {
+          "title": "Some",
+          "description": "An optional value.",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "$ref": "#/definitions/aiken~1transaction~1credential~1Referenced$aiken~1transaction~1credential~1Credential"
+            }
+          ]
+        },
+        {
+          "title": "None",
+          "description": "Nothing.",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    },
+    "Void": {
+      "title": "Unit",
+      "description": "The nullary constructor.",
+      "anyOf": [
+        {
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        }
+      ]
+    },
+    "aiken/transaction/OutputReference": {
+      "title": "OutputReference",
+      "description": "An `OutputReference` is a unique reference to an output on-chain. The `output_index`\n corresponds to the position in the output list of the transaction (identified by its id)\n that produced that output",
+      "anyOf": [
+        {
+          "title": "OutputReference",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "transaction_id",
+              "$ref": "#/definitions/aiken~1transaction~1TransactionId"
+            },
+            {
+              "title": "output_index",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/TransactionId": {
+      "title": "TransactionId",
+      "description": "A unique transaction identifier, as the hash of a transaction body. Note that the transaction id\n isn't a direct hash of the `Transaction` as visible on-chain. Rather, they correspond to hash\n digests of transaction body as they are serialized on the network.",
+      "anyOf": [
+        {
+          "title": "TransactionId",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "hash",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/credential/Address": {
+      "title": "Address",
+      "description": "A Cardano `Address` typically holding one or two credential references.\n\n Note that legacy bootstrap addresses (a.k.a. 'Byron addresses') are\n completely excluded from Plutus contexts. Thus, from an on-chain\n perspective only exists addresses of type 00, 01, ..., 07 as detailed\n in [CIP-0019 :: Shelley Addresses](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0019/#shelley-addresses).",
+      "anyOf": [
+        {
+          "title": "Address",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "payment_credential",
+              "$ref": "#/definitions/aiken~1transaction~1credential~1Credential"
+            },
+            {
+              "title": "stake_credential",
+              "$ref": "#/definitions/Option$aiken~1transaction~1credential~1Referenced$aiken~1transaction~1credential~1Credential"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/credential/Credential": {
+      "title": "Credential",
+      "description": "A general structure for representing an on-chain `Credential`.\n\n Credentials are always one of two kinds: a direct public/private key\n pair, or a script (native or Plutus).",
+      "anyOf": [
+        {
+          "title": "VerificationKeyCredential",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        },
+        {
+          "title": "ScriptCredential",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/credential/Referenced$aiken/transaction/credential/Credential": {
+      "title": "Referenced",
+      "description": "Represent a type of object that can be represented either inline (by hash)\n or via a reference (i.e. a pointer to an on-chain location).\n\n This is mainly use for capturing pointers to a stake credential\n registration certificate in the case of so-called pointer addresses.",
+      "anyOf": [
+        {
+          "title": "Inline",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "$ref": "#/definitions/aiken~1transaction~1credential~1Credential"
+            }
+          ]
+        },
+        {
+          "title": "Pointer",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "title": "slot_number",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "transaction_index",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "certificate_index",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "ppp_contracts_in_aiken/stablecoin_shared/CollateralDatum": {
+      "title": "CollateralDatum",
+      "anyOf": [
+        {
+          "title": "CollateralDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "col_minting_policy_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "col_owner",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "col_stablecoin_amount",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "week03/parameterized_vesting/VestingParameters": {
+      "title": "VestingParameters",
+      "anyOf": [
+        {
+          "title": "VestingParameters",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "beneficiary",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "deadline",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "week03/vesting/VestingDatum": {
+      "title": "VestingDatum",
+      "anyOf": [
+        {
+          "title": "VestingDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "beneficiary",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "deadline",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "week06/exploitable_swap/DatumSwap": {
+      "title": "DatumSwap",
+      "anyOf": [
+        {
+          "title": "DatumSwap",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "beneficiary",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "price",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "week06/negative_r_timed/CustomDatum": {
+      "title": "CustomDatum",
+      "anyOf": [
+        {
+          "title": "CustomDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "deadline",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "week09/collateral/CollateralRedeemer": {
+      "title": "CollateralRedeemer",
+      "anyOf": [
+        {
+          "title": "Redeem",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "Liquidate",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    },
+    "week09/minting/MintingParams": {
+      "title": "MintingParams",
+      "anyOf": [
+        {
+          "title": "MintingParams",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "mp_oracle_validator",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "mp_collateral_validator",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "mp_collateral_minPercent",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "week09/minting/MintingRedeemer": {
+      "title": "MintingRedeemer",
+      "anyOf": [
+        {
+          "title": "Minting",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "Burning",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        },
+        {
+          "title": "Liquidating",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": []
+        }
+      ]
+    },
+    "week09/oracle/AssetClass": {
+      "title": "AssetClass",
+      "anyOf": [
+        {
+          "title": "AssetClass",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "policy_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "name",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "week09/oracle/OracleParams": {
+      "title": "OracleParams",
+      "anyOf": [
+        {
+          "title": "OracleParams",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "o_nft",
+              "$ref": "#/definitions/week09~1oracle~1AssetClass"
+            },
+            {
+              "title": "o_operator",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "week09/oracle/OracleRedeemer": {
+      "title": "OracleRedeemer",
+      "anyOf": [
+        {
+          "title": "Update",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "Delete",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    }
+  }
 }
